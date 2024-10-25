@@ -49,7 +49,7 @@ class Paddle {
     }
 };
 
-class Computer: public Paddle  { // ratom vwert aq publics
+class Computer: public Paddle  {
     public:
     void update(int ball_y) {
         if(y + height / 2 < ball_y){
@@ -101,7 +101,7 @@ int main() {
         ball.draw();
         Player.draw();
         computer.draw();
-        DrawText(TextFormat("%i", Computer_score), 300, 20, 70, PURPLE); // es %i ragaa
+        DrawText(TextFormat("%i", Computer_score), 300, 20, 70, PURPLE);
         DrawText(TextFormat("%i", player_score), 900, 20, 70, PURPLE);
 
         //moving
